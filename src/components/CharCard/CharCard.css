@@ -1,0 +1,104 @@
+.char-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.char-card:hover {
+  border-color: var(--color-energy);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+.char-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.char-card-media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: radial-gradient(
+    circle at 50% 70%,
+    rgba(255, 204, 31, 0.25),
+    transparent 60%
+  );
+  overflow: hidden;
+}
+.char-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+
+.char-card-side {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: var(--radius);
+}
+.char-card-side-hero {
+  background: var(--color-hero);
+  color: #1a1305;
+}
+.char-card-side-villain {
+  background: var(--color-villain);
+  color: #fff;
+}
+
+.char-card-fav {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: rgba(14, 10, 20, 0.7);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--color-text-muted);
+  transition: color 0.15s, border-color 0.15s;
+}
+.char-card-fav:hover,
+.char-card-fav-on {
+  color: var(--color-energy);
+  border-color: var(--color-energy);
+}
+
+.char-card-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.char-card-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.char-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.char-card-ki {
+  color: var(--color-energy);
+  font-weight: 600;
+}
