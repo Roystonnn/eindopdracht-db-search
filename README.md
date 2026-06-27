@@ -44,20 +44,20 @@ Dit is een voorproefje van mijn mainpage genaamd: Discover.
 
 ## Benodigdheden
 
-- **Node.js** ≥ 18 (LTS aanbevolen) — [download](https://nodejs.org)
-- **npm** ≥ 9 (wordt meegeleverd met Node)
+- **Node.js** ≥ 24 (LTS aanbevolen) — [download](https://nodejs.org)
+- **npm** ≥ 11 (wordt meegeleverd met Node)
 - Een moderne browser (Chrome, Firefox, Safari, Edge)
 - Een **NOVI Dynamic API key** voor authenticatie (zie [Configuratie](#configuratie--api-keys))
 
 Gebruikte technieken / frameworks:
 
-| Techniek | Versie | Waarvoor |
-|---|---|---|
-| React | 19 | UI rendering |
-| React Router | 7 | Client-side routing |
-| Vite | 7 | Build tool / dev server |
+| Techniek | Versie  | Waarvoor |
+|---|---------|---|
+| React | 19      | UI rendering |
+| React Router | 8       | Client-side routing |
+| Vite | 7       | Build tool / dev server |
 | Dragon Ball API | publiek | Karakterdata |
-| NOVI Dynamic API | — | Authenticatie & userbeheer |
+| NOVI Dynamic API | —       | Authenticatie & userbeheer |
 
 ## De applicatie draaien
 
